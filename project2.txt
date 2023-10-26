@@ -1,4 +1,4 @@
-﻿import json 
+﻿import json # Подключаем модуль
 
 student  = '''{ 
 "Name" : "Peter", 

@@ -1,5 +1,5 @@
 ﻿import json
-
+"""Чтение файла в формате JSON в объект Python"""
 with open("afina.json") as f:
     file = json.load(f)
 print(file)
