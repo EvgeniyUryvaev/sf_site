@@ -26,6 +26,6 @@ for event in events:  # Цикл переберет весь словарь even
     """Создание объекта event_obj на основе класса через запятую"""
     event_obj = Event(timestamp=event.get("timestamp"),
                       event_type=event.get("type"),
-                      session_id=event.get("session_id"))  
+                      session_id=event.get("session_id"))  # Метод get() позволяет извлечь значение по заданному ключу
     print(event_obj.timestamp)
     print(event_obj.type
