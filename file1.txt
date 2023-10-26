@@ -1,0 +1,21 @@
+﻿class Product:
+"""Описание метода клвсса __init___"""
+    def __init__(self, name, category, quantity_in_stock):
+        """Свойства класса"""
+        self.name = name
+        self.category = category
+        self.quantity_in_stock = quantity_in_stock
+
+"""Описание другого метода метода этого же класса"""
+    def is_available(self):
+        """Свойства класса"""
+        if self.quantity_in_stock > 0:
+            return True
+        else: False
+"""Класс создан"""
+
+"""Создаем объект на основе класса"""
+food1 = Product( "Хлеб", "Арбуз", "Макароны")
+eggs = Product("eggs", "food", 5)
+print(eggs.is_available())  # Вызов исполнения метода (Вызов функции)
+print(food1.name)
