@@ -1,0 +1,12 @@
+﻿import json # Подключаем модуль
+
+student  = '''{ 
+"Name" : "Peter", 
+"Roll_no" : "0090014", 
+"Grade" : "A", 
+"Age": 20, 
+"Subject": ["Computer Graphics", "Discrete Mathematics", "Data Structure"] 
+}'''
+data = json.loads(student) 
+print(data['Subject']) 
+print(type(data))

@@ -1,0 +1,9 @@
+﻿import json
+"""Чтение файла в формате JSON в объект Python"""
+with open("afina.json") as f:
+    file = json.load(f)
+print(file)
+
+for key, value in file.items():
+    print("key :", key)
+    print("value :", value)
